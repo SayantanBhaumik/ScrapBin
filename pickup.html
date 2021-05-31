@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="The Kabadiwala is online doorstep scrap pickup service which buys your scrap/junk materials at your place. You can sell Newspapers, Books, Carton, Plastic, Iron, Steel, Copper, Brass, Tin and many more recyclable materials by booking a pickup online.">
+    <title>Request Pickup | The Scrapwala</title>
+    <link rel="stylesheet" href="font-awesome.min.css" />
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="landing.min.css" />
+    
+    <style>
+        .mobileno-input {
+            height: 48px !important;
+        }
+            .mobileno-input:focus, :active {
+                border-color: #ccc;
+                box-shadow: none;
+            }
+    </style>
+
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-532P2ZM');</script>
+    <script src="core.min.js"></script>
+</head>
+<body class="bg-light-soft">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                  
+                <a href="/" class="navbar-brand">
+                    <img alt="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcReUf7QMHBf4s-gxXlUdncb6dNSniNXCaQx7l3okNTho7hufvQb&usqp=CAU" width="80"height="80">
+               <span class="text-warning"style="font-size:40px;">Scrapwala </span>
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="/Rates">Price List</a></li>
+                    <li class="active"><a href="/Request">Request Pickup</a></li>
+                        <li class=""><a href="/Account/SignIn?Next=%2FRequest">Sign In</a></li>
+                        <li class=""><a href="/Account/SignUp?Next=%2FRequest">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br /><br />
+    <div class="content p-b-lg">
+        <div class="p-t-xl" style="max-width:400px; margin:0 auto;">
+    <div class="hpanel" id="request_form_container">
+            <div class="panel-body text-center">
+        <h3><b>Sell or Donate your scrap</b></h3>
+        <div class="h4 p-t-md"><i>In just 3 easy steps...</i></div><br />
+        <form method="post" data-ajax-url="/Ajax/Request/MobileNo" data-ajax="true" data-ajax-method="POST" data-ajax-begin="$('#request_mobileno_fieldset').attr('disabled',''); $('#sellbutton').html('Please wait..');" data-ajax-complete="$('#request_mobileno_fieldset').removeAttr('disabled'); $('#sellbutton').html('₹ SELL');" , data-ajax-update="#request_form_container">
+
+            <fieldset id="request_mobileno_fieldset">
+                <div class="form-group">
+                    <label class="control-label sr-only" for="MobileNo">MobileNo</label>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                        <span class="input-group-addon mobileno-code">+91</span>
+                        <input class="form-control input-lg mobileno-input" placeholder="Enter your mobile number" type="text" data-val="true" data-val-regex="Mobile number is invalid." data-val-regex-pattern="(\d{10})" data-val-required="Mobile number is required." id="MobileNo" name="MobileNo" value="" />
+                    </div>
+                    <span class="text-danger small field-validation-valid" data-valmsg-for="MobileNo" data-valmsg-replace="true"></span>
+                </div>
+                <div class="form-group text-center">
+                    <button class="btn btn-success btn-lg p-l-md p-r-md font-bold" id="sellbutton" type="submit">₹ SELL</button>
+                </div>
+            </fieldset>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8AxJL5XMFTxBtdc3I7bE2kfry2HH-f8TRp2D2aj8_n9S5VlyuQhgCexCWHxcMw3Y5I3bdYW-kyo6gcJ8Tq-m4GnmmuYH7sUfVGg0fLrbVhHRbdbz0H39rsefa3KuI_Lfa3wwLitq7KDsspnv57usXfI" /></form>
+        <div class="h5">
+            Now only in<br />Kolkata, Howrah, Durgapur, Silliguri,  and Haldia.
+        </div>
+        <br /><br />
+        <ul id="progressbar">
+            <li class="active" id="s1progress">Mobile No</li>
+            <li id="s2progress">Address</li>
+            <li id="s3progress">Schedule</li>
+        </ul>
+    </div>
+
+    </div>
+</div>
+
+    </div>
+    <footer class="p-sm bg-white" style="position:absolute;right:0;left:0;bottom:0;">
+
+       
+    <a href="index.html" class="w3-button w3-wide w3-round-xlarge w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Back to home</a>
+    </footer>
+    
+    
+    <div role="dialog" id="AddressModal" class="modal fade " tabindex="-1"><div class='modal-dialog '><div class='modal-content' id=''><div class="modal-body"><div class="text-center"><img alt="Loading.." src="/images/ripple.gif"/></div></div></div></div></div>
+
+
+    
+    <script>
+        $("input#MobileNo").focus();
+    </script>
+
+</body>
+</html>

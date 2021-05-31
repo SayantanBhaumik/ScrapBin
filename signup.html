@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="The Kabadiwala is online doorstep scrap pickup service which buys your scrap/junk materials at your place. You can sell Newspapers, Books, Carton, Plastic, Iron, Steel, Copper, Brass, Tin and many more recyclable materials by booking a pickup online.">
+    <title>Sign Up | The Scrapwala</title>
+    <link rel="stylesheet" href="font-awesome.min.css" />
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="landing.min.css" />
+    
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-532P2ZM');</script>
+    <script src="/js/core.min.js"></script>
+</head>
+<body class="bg-light-soft">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                 
+                <a href="/" class="navbar-brand">
+                    <img alt="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcReUf7QMHBf4s-gxXlUdncb6dNSniNXCaQx7l3okNTho7hufvQb&usqp=CAU" width="80"height="80">
+               <span class="text-warning"style="font-size:40px;">Scrapwala </span>
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="/Rates">Price List</a></li>
+                    <li class=""><a href="/Request">Request Pickup</a></li>
+                        <li class=""><a href="/Account/SignIn">Sign In</a></li>
+                        <li class="active"><a href="/Account/SignUp">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br /><br />
+    <div class="content p-b-lg">
+        <div style="max-width:400px; margin:0 auto;">
+    <div class="text-center">
+        <h3 class="heading">Create your account</h3>
+    </div>
+    <div class="hpanel" id="SignContent">
+        <div id="signup_msg">
+</div>
+<div class="panel-body">
+    <form method="post" id="signupform" data-ajax="true" data-ajax-method="post" data-ajax-url="/Account/Ajax/SignUp" data-ajax-update="#SignContent" data-ajax-begin="$('#signupsubmitbtn').attr('disabled','').html('Please wait..');" data-ajax-complete="$('#signupsubmitbtn').removeAttr('disabled').html('SIGN UP');">
+        <fieldset>
+            <div class="form-group">
+                <label class="control-label" for="Model_MobileNo">Mobile number</label>
+                <div class="input-group">
+                    <span class="input-group-addon" style="background-color:white;border-right:none;">+91</span>
+                    <input class="form-control" placeholder="Enter Mobile Number" type="text" data-val="true" data-val-regex="Mobile number is invalid." data-val-regex-pattern="(\d{10})" data-val-required="Mobile number is required." id="Model_MobileNo" name="Model.MobileNo" value="" />
+                </div>
+                <span class="text-danger small field-validation-valid" data-valmsg-for="Model.MobileNo" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Model_Name">Name</label>
+                <input class="form-control" placeholder="Enter name" type="text" data-val="true" data-val-required="Name is required." id="Model_Name" name="Model.Name" value="" />
+                <span class="text-danger small field-validation-valid" data-valmsg-for="Model.Name" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Model_Password">Password</label>
+                <input class="form-control" placeholder="Enter password" type="password" data-val="true" data-val-required="Password is required." id="Model_Password" name="Model.Password" />
+                <span class="text-danger small field-validation-valid" data-valmsg-for="Model.Password" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Model_ConfirmPassword">Confirm Password</label>
+                <input class="form-control" placeholder="Enter password again" type="password" data-val="true" data-val-equalto="Password doesn&#x27;t match." data-val-equalto-other="*.Password" id="Model_ConfirmPassword" name="Model.ConfirmPassword" />
+                <span class="text-danger small field-validation-valid" data-valmsg-for="Model.ConfirmPassword" data-valmsg-replace="true"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="Model_Address">Address</label>
+                <div class="row">
+    <div class="col-xs-6">
+        <div class="form-group">
+            <label class="sr-only control-label" for="Model_Address_CityId">City</label>
+            <select class="form-control" placeholder="City" data-val="true" data-val-required="City is required." id="Model_Address_CityId" name="Model.Address.CityId">
+                    <option></option>
+            </select>
+            <span class="text-danger small field-validation-valid" data-valmsg-for="Model.Address.CityId" data-valmsg-replace="true"></span>
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <div class="form-group">
+            <label class="sr-only control-label" for="Model_Address_LocalityId">Locality</label>
+            <select class="form-control" placeholder="Locality" data-val="true" data-val-required="Locality is required." id="Model_Address_LocalityId" name="Model.Address.LocalityId">
+                    <option></option>
+            </select>
+            <span class="text-danger small field-validation-valid" data-valmsg-for="Model.Address.LocalityId" data-valmsg-replace="true"></span>
+        </div>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="sr-only control-label" for="Model_Address_Landmark">Landmark</label>
+    <input class="form-control" placeholder="Landmark" type="text" id="Model_Address_Landmark" name="Model.Address.Landmark" value="" />
+    <span class="text-danger small field-validation-valid" data-valmsg-for="Model.Address.Landmark" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group">
+    <label class="sr-only control-label" for="Model_Address_AddressLine">Address line</label>
+    <input class="form-control" placeholder="Eg.- House/Flat No, Society/Apartment Name" type="text" data-val="true" data-val-required="Address Line is required" id="Model_Address_AddressLine" name="Model.Address.AddressLine" value="" />
+    <span class="text-danger small field-validation-valid" data-valmsg-for="Model.Address.AddressLine" data-valmsg-replace="true"></span>
+</div><br><br><br>
+<hr>
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+    <a href="index.html" class="w3-button w3-wide w3-round-xlarge w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Back to home</a>
+    </footer>
+<script>
+   if (!$("script[src='/js/select2.min.js']").length) {
+            var Js = document.createElement("script");
+            Js.src = "/js/select2.min.js";
+                $("head").append(Js)
+                    }
+                    
+                if (!$("link[href='/css/select2.min.css']").length) {
+                var Css = document.createElement("link");
+                    Css.rel = "stylesheet";
+                Css.href = "/css/select2.min.css";
+                $("head").append(Css);
+    }
+    </script>
+
+            <script>
+                $(function () {
+                    $.fn.select2.defaults.set("theme", "bootstrap");
+                    $.fn.select2.defaults.set("containerCssClass", ":all:");
+                });
+            </script><lib />
+<script>
+    $(function () {
+        var modal = $("#Model_Address_LocalityId").closest(".modal");
+        $("#Model_Address_LocalityId").select2({
+            ajax: {
+                url: "/ajax/address/search/localities",
+                data: function (params) {
+                    return $.extend(
+                        {
+                            cityId: $("#Model_Address_CityId").val(),
+                            q: params.term
+                        }, params);
+                },
+                processResults: function (data, params) {
+                    return {
+                        results: data.data,
+                        pagination: {
+                            more: (data.page * data.size) < data.total
+                        }
+                    };
+                },
+                cache: true,
+                delay: 1000
+            },
+            dropdownParent: modal.length ? modal : $(document.body),
+            placeholder: { id: 0, name: "Locality" },
+            escapeMarkup: function (markup) { return markup; },
+            minimumInputLength: 2,
+            templateResult: formatLocality,
+            templateSelection: function (locality) { return locality.text || locality.name }
+        });
+        $("#Model_Address_CityId").select2({
+            ajax: {
+                url: "/ajax/address/search/cities",
+                    processResults: function(data, params) {
+                    return {
+                        results: data.data,
+                                        pagination: {
+                            more: (data.page * data.size) < data.total
+                                        }
+                    };
+                },
+                                cache: true,
+                                delay: 1000
+                },
+            dropdownParent: modal.length? modal : $(document.body),
+            placeholder: { id: 0, name: "City" },
+            autoClear: true,
+                            escapeMarkup: function(markup) { return markup },
+                            minimumInputLength: 2,
+                            templateResult: formatCity,
+                            templateSelection: function (city) { return city.text || city.name }
+        });
+    });
+    function formatCity(city) {
+        if (city.loading) {
+            return city.text;
+        }
+        console.log(city);
+        var markup = "<div class='media'>"
+            + "<div class='media-body'>"
+            + "<div class='media-heading'>" + city.name + "</div>"
+            + "<p class='small'>" + city.state.name + "</p>"
+            + "</div>"
+            + "</div>";
+        return markup;
+    }
+    function formatLocality(locality) {
+        if (locality.loading) {
+            return locality.text;
+        }
+        return locality.name;
+    }
+</script>
+            </div>
+            <div class="form-group text-center">
+                <div class="text-muted">
+                    <small style="font-size:12px;">By clicking on "Sign Up" you agree to our <a href="/Content/TermAndCondition" target="_blank">Terms and Conditions</a>.</small>
+                </div><br />
+                <button type="submit" class="btn btn-success p-l-md p-r-md font-bold" id="signupsubmitbtn">SIGN UP</button>
+            </div>
+        </fieldset>
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8IMdjD3eWtNMsgJfjwuwmncxUdw8IuQ5sPCvll-ApiSCMdxaw5UhmjE1cg6FZSXk8ymlS-2v9mIKOOoh7uPJfT8heM9qNljx8xmllvyfwhRabauRr4f8BRPCZN2by918i6e7frSoVozF9lePVP0hd5Y" /></form>
+    
+</div>
+<div class="panel-footer">
+    <span class="text-muted"><span class="p-r-xs">Already had an account?</span> <a href="signin.html" class="btn btn-default btn-sm">Sign in</a></span>
+</div>
+<script>
+    $(function () {
+        $.validator.unobtrusive.parse($("#signupform"));
+        $("#signupform").on("submit", function (e) {
+               $(".input-validation-error").closest(".form-group").addClass("has-error");
+        });
+        $("#signupform").on("focusout keyup change", "textarea,input,select", function (e) {
+            if ($('#signupform').validate().element(this)) {
+                $(this).closest(".form-group").removeClass("has-error");
+            } else {
+                $(this).closest(".form-group").addClass("has-error");
+            }
+        });
+    });
+</script>
+
+    </div>
+</div>
+
+    </div>
+   
+
+    
+</body>
+</html>
